@@ -20,10 +20,7 @@ const thoughtSchema = new Schema(
       default: Date.now,
     },
 
-    reactionId: {
-      type: Schema.Types.ObjectId,
-      default: () => new Types.ObjectId(),
-    },
+    
     
     reactions: [reactionSchema],
   },
